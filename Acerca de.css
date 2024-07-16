@@ -1,0 +1,156 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%; /* Máximo ancho del menú */
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Barra de navegacion*/
+nav {
+	background-color: #f6a700;
+	height: 80px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+nav a {
+	flex: 1;
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #000;
+	transition: .2s ease-in-out all;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background: #f0f0f0;
+}
+
+nav .indicador {
+	width: 0;
+	height: 7px;
+	background: #113cfc;
+	position: absolute;
+	bottom: 0;
+	transition: .3s ease-out all;
+}
+
+@media screen and (max-width: 800px) {
+	nav a {
+		font-size: 14px;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	nav a {
+		font-size: 12px;
+		padding: 5px;
+	}
+}
+/* La etiqueta P*/
+nav p {
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+    flex: 1; /* Hacer que la etiqueta p ocupe todo el espacio disponible */
+    display: flex; /* Usar flexbox para alinear contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    text-transform: uppercase; /* Aplicar mayúsculas al texto */
+    font-weight: 500; /* Peso de la fuente */
+    text-decoration: none; /* Quitar subrayado del texto */
+    background: #f6a700; /* Color de fondo */
+    transition: .2s ease-in-out all; /* Transición */
+	color: white; /* Cambiar el color del texto (en este caso, rojo) */
+    font-weight: bold; /* Poner el texto en negrita */
+}
+
+/* Estilos adicionales para la versión móvil */
+@media screen and (max-width: 800px) {
+    nav p {
+        font-size: 14px; /* Tamaño de fuente */
+        padding: 5px; /* Relleno */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav p {
+        font-size: 12px; /* Tamaño de fuente */
+        padding: 5px; /* Relleno */
+    }
+}
+/*Final*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 120px;
+}
+
+.seccion {
+    min-height: 20vh;
+    max-width: 800px;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion .card {
+    background: #fff;
+    height: 90%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.seccion p {
+    line-height: 38px;
+    margin-bottom: 40px;
+    color: #494949;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+    .seccion {
+        width: 90%;
+    }
+}
+
+

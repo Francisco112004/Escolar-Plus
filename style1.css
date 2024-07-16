@@ -1,0 +1,254 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1000%; /* Máximo ancho del menú */
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+.hero {
+    background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 80px);
+}
+
+.hero h1 {
+	font-size: 80px;
+}
+
+.hero p {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #113CFC;
+
+    
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 1.5;
+
+}
+
+
+
+/*Barra de navegacion*/
+
+/*Barra de navegacion*/
+nav {
+	background-color: #f6a700;
+	height: 80px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+nav a {
+	flex: 1;
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #000;
+	transition: .2s ease-in-out all;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background: #f0f0f0;
+}
+
+nav .indicador {
+	width: 0;
+	height: 7px;
+	background: #113cfc;
+	position: absolute;
+	bottom: 0;
+	transition: .3s ease-out all;
+}
+
+@media screen and (max-width: 800px) {
+	nav a {
+		font-size: 14px;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	nav a {
+		font-size: 12px;
+		padding: 5px;
+	}
+}
+/* La etiqueta P*/
+nav p {
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+    flex: 1; /* Hacer que la etiqueta p ocupe todo el espacio disponible */
+    display: flex; /* Usar flexbox para alinear contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    text-transform: uppercase; /* Aplicar mayúsculas al texto */
+    font-weight: 500; /* Peso de la fuente */
+    text-decoration: none; /* Quitar subrayado del texto */
+    background: #f6a700; /* Color de fondo */
+    transition: .2s ease-in-out all; /* Transición */
+	color: white; /* Cambiar el color del texto (en este caso, rojo) */
+    font-weight: bold; /* Poner el texto en negrita */
+}
+
+/* Estilos adicionales para la versión móvil */
+@media screen and (max-width: 800px) {
+    nav p {
+        font-size: 14px; /* Tamaño de fuente */
+        padding: 5px; /* Relleno */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav p {
+        font-size: 12px; /* Tamaño de fuente */
+        padding: 5px; /* Relleno */
+    }
+}
+/*Final*/
+/*Final*/
+
+
+
+
+/*CARRUCEL*/
+
+
+/* Estilos para el carrusel */
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); }
+}
+
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slide {
+    height: 100px;
+    width: 250px;
+}
+
+
+/*FINAL*/
+
+
+
+#logo {
+    max-width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    display: block; /* Esto para centrar horizontalmente la imagen */
+    margin: 0 auto 20px; /* Margen inferior para separar la imagen del título */
+}
+
+
+.seccion {
+	min-height: 100vh;
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.seccion .card {
+	background: #fff;
+	height: 90%;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.seccion p {
+	line-height: 38px;
+	margin-bottom: 40px;
+	color: #494949;
+	font-size: 20px;
+    text-align: justify;
+}
+
+.seccion img {
+	width: 100px;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
